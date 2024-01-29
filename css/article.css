@@ -10,11 +10,12 @@
 }
 .article_detail {
   padding-top: 10px;
-  cursor: pointer;
   display: flex;
   font-size: 12px;
+  position: relative;
 }
 .article_detail img {
+  cursor: pointer;
   width: 32px;
   height: 32px;
   border-radius: 100%;

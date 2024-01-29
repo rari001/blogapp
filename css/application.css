@@ -135,15 +135,20 @@
 }
 .article_detail {
   padding-top: 10px;
-  cursor: pointer;
   display: flex;
   font-size: 12px;
+  position: relative;
 }
 .article_detail img {
+  cursor: pointer;
   width: 32px;
   height: 32px;
   border-radius: 100%;
   margin-right: 16px;
+}
+.article_detail_actions {
+  right: 0;
+  position: absolute;
 }
 .article_content {
   padding: 24px 0 32px;
@@ -171,7 +176,7 @@
 input.text {
   width: 100%;
   margin: 8px 0px;
-  padding: 16px 24px;
+  padding: 16px 8px;
   border: 1px solid #EBEBEB;
 }
 
@@ -188,6 +193,61 @@ textarea {
   border: 1px solid #EBEBEB;
 }
 
+.btn-primary {
+  background-color: #8AC542;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 16px 0;
+  font-weight: bold;
+}
+
+.flash {
+  position: fixed;
+  top: 16px;
+  font-size: 12px;
+  right: 16px;
+  width: 160px;
+  background: white;
+  -webkit-animation: fade-in-out;
+  animation: fade-in-out;
+  visibility: hidden;
+  z-index: 1;
+  padding: 16px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@-webkit-keyframes fade-in-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 html {
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
