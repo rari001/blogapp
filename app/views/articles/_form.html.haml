@@ -1,0 +1,14 @@
+%ul
+  - article.errors.full_messages.each do |msg|
+    %li= msg
+= form_with(model: article, local: true) do |f|
+  %div
+    = f.label :title, 'タイトル'
+  %div
+    = f.text_field :title, placeholder: 'タイトル❤️', class: 'text'
+  %div
+    = f.label :content, '内容'
+  %div
+    = f.text_area :content, placeholder: '内容を入力してね☆', class: 'content'
+  %div
+    = f.submit '保存', class: 'btn-primary'
