@@ -10,9 +10,11 @@
   text-align: center;
   cursor: pointer;
 }
+.tabs_item a {
+  display: block;
+}
 .tabs_item.active {
   background-color: #8AC542;
-  color: white;
 }
 .tabs_item:hover {
   opacity: 0.9;
