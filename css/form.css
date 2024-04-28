@@ -17,6 +17,9 @@ textarea, trix-editor {
   resize: vertical;
   border: 1px solid #EBEBEB;
 }
+textarea.sm, trix-editor.sm {
+  mheight: 150px;
+}
 
 .btn-primary {
   background-color: #8AC542;
