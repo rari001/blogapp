@@ -32,7 +32,7 @@ gem 'faker'
 gem 'hamlit'
 gem 'net-protocol', '~> 0.2.2'
 gem 'aws-sdk-s3', require: false
-
+gem 'sidekiq'
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
 
@@ -45,6 +45,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'rubocop-rails'
   gem 'dotenv-rails'
+  gem 'letter_opener'
+  gem 'letter_opener_web', '~> 1.0' 
 end
 
 group :development do
