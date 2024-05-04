@@ -210,6 +210,9 @@ textarea, trix-editor {
   resize: vertical;
   border: 1px solid #EBEBEB;
 }
+textarea.sm, trix-editor.sm {
+  min-height: 150px;
+}
 
 .btn-primary {
   background-color: #8AC542;
@@ -366,6 +369,11 @@ textarea, trix-editor {
   max-width: 100% !important;
 }
 
+.footer-container {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
 html {
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -416,5 +424,9 @@ a {
 }
 .float_btn i {
   margin-top: 22px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=application.css.map */
